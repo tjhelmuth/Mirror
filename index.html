@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="build/app.bundle.js"></script>
+    <link rel="stylesheet" href="css/bulma.min.css" ></link>
+    <link rel="stylesheet" href="css/app.css" ></link>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css/jquery-layoutday.css">
+	<script src="/js/jquery-layoutday.js"></script>
+</head>
+
+<body>    
+
+        <!-- <div id="calendar"></div>
+        <div class="time">
+        <ul>
+            <li>9:00 <span>AM</span></li>
+            <li class="halfhour">9:30</li>
+            <li>10:00 <span>AM</span></li>
+            <li class="halfhour">10:30</li>
+            <li>11:00 <span>AM</span></li>
+            <li class="halfhour">11:30</li>
+            <li>12:00 <span>PM</span></li>
+            <li class="halfhour">12:30</li>
+            <li>1:00 <span>PM</span></li>
+            <li class="halfhour">1:30</li>
+            <li>2:00 <span>PM</span></li>
+            <li class="halfhour">2:30</li>
+            <li>3:00 <span>PM</span></li>
+            <li class="halfhour">3:30</li>
+            <li>4:00 <span>PM</span></li>
+            <li class="halfhour">4:30</li>
+            <li>5:00 <span>PM</span></li>
+            <li class="halfhour">5:30</li>
+            <li>6:00 <span>PM</span></li>
+            <li class="halfhour">6:30</li>
+            <li>7:00 <span>PM</span></li>
+        </ul>
+        </div> -->
+
+    <div class="container is-fluid">
+        <div class="" id="product-header" style="text-align:right;">
+            <h1 class="title is-2">Classic Fit Cotton T-Shirt</h1>
+        </div>
+        <div class="" id="breadcrumbs">
+            <nav class="breadcrumb has-dot-separator is-small is-right" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">CLOTHING</a></li>
+                    <li><a href="#">SWEATSHIRTS & SWEATPANTS</a></li>
+                    <li><a href="#">SWEATSHIRTS</a></li>
+                    <li class="is-active"><a href="#" aria-current="page">Classic Fit Cotton T-Shirt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container is-fluid">
+        <div class="columns">
+            <!-- <div class="column is-6 is-offset-4">
+                <div class="box">
+
+                </div>
+            </div> -->
+
+            <div class="column is-8 is-offset-2">
+                <div id="schedule" style="height:800px; padding:50px; visibility:hidden;">
+                    <h1 class="title is-3">Schedule an Appointment</h1>
+                    <div style="text-align:right; margin-bottom:5px;">
+                        <button class="button" id="btnCloseSchedule">
+                            Close
+                        </button>                
+                    </div>
+        
+                    <div id="calendar"></div>
+                    <div class="time">
+                        <ul>
+                            <li>9:00 <span>AM</span></li>
+                            <li class="halfhour">9:30</li>
+                            <li>10:00 <span>AM</span></li>
+                            <li class="halfhour">10:30</li>
+                            <li>11:00 <span>AM</span></li>
+                            <li class="halfhour">11:30</li>
+                            <li>12:00 <span>PM</span></li>
+                            <li class="halfhour">12:30</li>
+                            <li>1:00 <span>PM</span></li>
+                            <li class="halfhour">1:30</li>
+                            <li>2:00 <span>PM</span></li>
+                            <li class="halfhour">2:30</li>
+                            <li>3:00 <span>PM</span></li>
+                            <li class="halfhour">3:30</li>
+                            <li>4:00 <span>PM</span></li>
+                            <li class="halfhour">4:30</li>
+                            <li>5:00 <span>PM</span></li>
+                            <li class="halfhour">5:30</li>
+                            <li>6:00 <span>PM</span></li>
+                            <li class="halfhour">6:30</li>
+                            <li>7:00 <span>PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-2" style="text-align:right">    
+                <div class="menu-item">
+                    <div class="cart-container">
+                        <div class="cart">
+                            <p class="cart-count is-size-5 has-text-info has-text-weight-bold">3</p>
+                            <i class="fa fa-shopping-bag fa-5x"></i>
+                        </div>
+                        <h1 class="title is-4" style="margin-top:10px;"> $31.92 </h1>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <button class="button is-large is-rounded is-outlined is-info">
+                        Add to Cart   <i class="fa fa-plus" style="margin-left:5px;"></i>
+                    </button>
+                </div>
+
+                <div class="menu-item" id="size">
+                    <div>
+                        <h1 class="title">
+                            Size
+                        </h1>
+                    </div>
+                    
+                    <div class="tabs">
+                        <ul>
+                            <li><a>S</a></li>
+                            <li class="is-active"><a>M</a></li>
+                            <li><a>L</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div>
+                        <h1 class="title">
+                            Colors
+                        </h1>
+                    </div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <span style="background-color: #fda0aa;"></span>
+                                <input type="hidden" value="HYANNIS RED" />
+                            </li>
+                            <li>
+                                <span style="background-color: #e2ceb3"></span>
+                                <input type="hidden" value="SURREY TAN" />
+                            </li>
+                            <li>
+                                <span style="background-color: #cceae2"></span>
+                                <input type="hidden" value="BAYSIDE GREEN" />
+                            </li>
+                            <li class="active">
+                                <span style="background-color: #abc1f2"></span>
+                                <input type="hidden" value="CITY BLUE" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="title is-4 has-text-info has-text-weight-bold" id="color-title">
+                            City Blue
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div>
+                        <h1 class="title is">
+                            Similar Items
+                        </h1>
+                    </div>
+                    <img src="/images/pinkpolo.png" class="image is-96x96" alt="Placeholder image" style="display:inline-block; border: thin solid #1abc9c;">
+                    <p class="subtitle is-7">Custom Slim Fit Cotton Polo</p>
+
+                    <img src="/images/flowerpolo.png" class="image is-96x96" alt="Placeholder image" style="display:inline-block; border: thin solid #1abc9c;">
+                    <p class="subtitle is-7">Floral Soft-Touch Polo Shirt</p>
+
+                </div>
+                
+                <div class="menu-item">
+                    <button class="button is-large is-rounded is-outlined is-info">
+                            Help   <i class="fa fa-phone" style="margin-left:5px;"></i>
+                    </button>
+                </div>
+
+                <div class="menu-item">
+                    <button class="button is-large is-rounded is-outlined is-info" id="btnAppointment">
+                            Appointment   <i class="fa fa-calendar-alt" style="margin-left:5px;"></i>
+                    </button>
+                </div>
+
+                
+
+                <!-- <div class="box">
+                    <h1 class="title">Cart</h1>
+                    <button type="button" id="lol" class="button is-large is-info is-outlined is-white">Lol!</button>
+                    
+                </div>
+                <h1 class="subtitle">Hey</h1> -->
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- <button type="button" id="lol" class="button is-large is-loading is-info is-outlined is-white">Lol!</button> -->
+    <script src="js/fontawesome-all.min.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(() => {
+            $('#calendar').layOutDay({
+                'calendar_start': 540,
+                'calendar_end': 1140,
+                'time_selector': 'body .time'
+            });
+
+
+            const events = [
+                {event: {
+                    dateStart: new Date(/* year */ 2017, /* month */ 1,  /* day */ 9, /* hour */ 9, /* minute */ 30, /* senconds */ 10, /* milliseconds */ 10),
+                    dateEnd: new Date(2017, 1, 9, 12, 0, 0,0),
+                    title: "Greg Available",
+                    description: "Greg is available to help with custom fitting"
+                }},
+                {event: {
+                    dateStart: new Date(/* year */ 2017, /* month */ 1,  /* day */ 9, /* hour */ 11, /* minute */ 45, /* senconds */ 10, /* milliseconds */ 10),
+                    dateEnd: new Date(2017, 1, 9, 14, 30, 0,0),
+                    title: "James",
+                    description: "James is available to help with custom fitting"
+                }},
+                {event: {
+                    dateStart: new Date(/* year */ 2017, /* month */ 1,  /* day */ 9, /* hour */ 14, /* minute */ 45, /* senconds */ 10, /* milliseconds */ 10),
+                    dateEnd: new Date(2017, 1, 9, 18, 30, 0,0),
+                    title: "Katie",
+                    description: "Katie is available to help with custom fitting"
+                }}
+            ];
+
+            $("#calendar").addEvents(events);
+        });
+    </script>
+</body>
+
+</html>
